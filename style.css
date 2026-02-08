@@ -46,10 +46,11 @@ html {
   align-items: center;
   background-color: white;
   min-height: 100vh;
-  padding: 0px 20px;
+  padding: 0px 20px; 
 }
 .poost-cafee {
-  width: 350px;
+  width: 40%;
+  min-width: 350px;
 }
 .cafee img {
   width: 400px;
@@ -238,9 +239,9 @@ h4 {
 .reservation-form button:hover {
   background: #333;
 }
-.boxxxxx .maps {
+.boxxxxx .maps iframe {
   width: 600px;
-  height: 350px;
+  height: 300px;
 }
 .boxxxxx {
   margin-top: 10px;
@@ -277,7 +278,8 @@ h4 {
   text-align: center;
 }
 
-@media (max-width:738px) {
+
+@media (max-width: 738px) {
   .box-link {
     display: flex;
     flex-direction: column;
@@ -285,12 +287,13 @@ h4 {
   }
 
   .box-link img {
-    width: 100px;
+    width: 180px;
     margin-bottom: 10px;
   }
 
   .link a {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
     padding: 5px;
   }
 
@@ -300,20 +303,16 @@ h4 {
     justify-content: center;
     padding-top: 120px;
   }
-  
-
-.poost-cafee{
-  margin-top: -px;
-}
-
 
   .cafee img {
-    width: 280px;
+    width: 300px;
     margin-top: 20px;
   }
 
   .poost-cafee {
     width: 100%;
+    font-size: 18px;
+    font-weight: 600;
   }
 
   .Memu {
@@ -324,12 +323,13 @@ h4 {
   .mee {
     flex-direction: column;
     text-align: center;
-    
   }
 
   .mee p {
     width: 100%;
     margin: 10px 0;
+    font-size: 15px;
+    font-weight: 50;
   }
 
   .carat22 {
@@ -339,6 +339,7 @@ h4 {
   .card {
     width: 90%;
     height: auto;
+    margin: 10px;
   }
 
   .card:hover {
@@ -351,14 +352,14 @@ h4 {
     gap: 20px;
   }
 
-  .boxxxxx .maps {
-    width: 100%;
+  .boxxxxx .maps iframe {
+    width: 350px;
     height: 250px;
   }
 
   .reservation-form {
     margin: 0;
-    width: 100%;
+    width: 90%;
   }
 
   .twasall {
@@ -367,7 +368,7 @@ h4 {
     padding: 20px 0;
     gap: 20px;
   }
-  .maps{
+  .maps {
     display: flex;
     justify-content: center;
   }
