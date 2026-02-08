@@ -1,0 +1,374 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* غير الرقم ده على حسب طول الـ Navbar بتاعك */
+}
+
+/* محتوي الاول */
+.box-link {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  width: 100%;
+  position: fixed;
+}
+.box-link img {
+  width: 200px;
+}
+.link a {
+  text-decoration: none;
+  padding: 10px 10px;
+  color: black;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.link .lon {
+  color: rgb(230, 172, 0);
+}
+.link a:hover {
+  width: 20px;
+  color: rgb(230, 172, 0);
+  border-radius: 20px;
+}
+.cafee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  min-height: 100vh;
+  padding: 0px 20px;
+}
+.poost-cafee {
+  width: 350px;
+}
+.cafee img {
+  width: 400px;
+  animation-name: cafee;
+  animation-duration: 1s;
+}
+@keyframes cafee {
+  0% {
+    transform: translateX(200px);
+  }
+}
+
+.span {
+  display: inline-block;
+  color: rgb(230, 172, 0);
+  animation-name: span1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes span1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+p {
+  margin-top: 0;
+  font-size: 12px;
+}
+h3 {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+/* محتوي الثاني */
+.Our {
+  text-align: center;
+  background-color: white;
+}
+.Our p {
+  color: rgb(230, 172, 0);
+  text-align: center;
+}
+.Our h2 {
+  font-weight: 600;
+}
+
+.Memu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 100px;
+  flex-wrap: wrap;
+}
+span {
+  color: rgb(230, 172, 0);
+}
+.mee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px rgb(175, 175, 175) solid;
+  width: fit-content;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+
+.mee img:hover {
+  width: 60px;
+  filter: brightness(1.3);
+}
+
+.mee p {
+  width: 250px;
+}
+h4 {
+  margin-bottom: 0;
+}
+.mee img {
+  width: 50px;
+  transition: 1s;
+}
+.mee p {
+  margin-right: 20px;
+}
+/* محتوي الثالث */
+/* التنسيق الأساسي */
+.card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
+}
+.carat22 {
+  flex-wrap: wrap;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-wrap: wrap;
+  background: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+}
+.card:hover {
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.234);
+  width: 210px;
+  height: 210px;
+}
+.box h2 {
+  text-align: center;
+}
+
+.reservation-form {
+  margin-top: 60px;
+  margin-right: 50px;
+  width: 250px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.106);
+  border-radius: 10px;
+}
+
+.reservation-form h3 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #111;
+}
+
+.reservation-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+  padding: 5px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  background: #fafafa;
+}
+
+.reservation-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.reservation-form input:focus,
+.reservation-form textarea:focus {
+  border-color: #000;
+  background: #fff;
+}
+
+.reservation-form button {
+  margin-top: 10px;
+  padding: 8px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.reservation-form button:hover {
+  background: #333;
+}
+.boxxxxx .maps {
+  width: 600px;
+  height: 350px;
+}
+.boxxxxx {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* محتوي الاخيره */
+.twasall .twasall-1 p {
+  width: 280px;
+}
+
+.twasall h4 {
+  margin-bottom: 10px;
+}
+.twasall i {
+  color: white;
+  margin-right: 10px;
+}
+.twasall {
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.579);
+  margin-top: 20px;
+  background-image: url(img/footer-bg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.laboll {
+  color: rgb(230, 172, 0);
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media (max-width: 738px) {
+  .box-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-link img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .link a {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .cafee {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 120px;
+  }
+  
+
+.poost-cafee{
+  margin-top: -300px;
+}
+
+
+  .cafee img {
+    width: 280px;
+    margin-top: 20px;
+  }
+
+  .poost-cafee {
+    width: 100%;
+  }
+
+  .Memu {
+    margin: 0 10px;
+    justify-content: center;
+  }
+
+  .mee {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .mee p {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .carat22 {
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card:hover {
+    width: 95%;
+    height: auto;
+  }
+
+  .boxxxxx {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .boxxxxx .maps {
+    width: 100%;
+    height: 250px;
+  }
+
+  .reservation-form {
+    margin: 0;
+    width: 100%;
+  }
+
+  .twasall {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
+  .maps{
+    display: flex;
+    justify-content: center;
+  }
+}
