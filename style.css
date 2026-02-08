@@ -277,7 +277,7 @@ h4 {
   text-align: center;
 }
 
-@media (max-width: 738px) {
+@media (max-width:738px) {
   .box-link {
     display: flex;
     flex-direction: column;
@@ -303,7 +303,7 @@ h4 {
   
 
 .poost-cafee{
-  margin-top: -300px;
+  margin-top: -px;
 }
 
 
